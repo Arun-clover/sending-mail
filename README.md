@@ -11,4 +11,7 @@ I have just started so I am just learning So i will learn how to send mail with 
     nodemailer: "^6.10.0",
     nodemon: "^3.1.9"
 
+@NOTE you can only see that mail is send in vs code if u want u can change the code to your will
+My code is only for learning purpose but this is the basic structure to connect frontend and backend
+
 Thank you🙏

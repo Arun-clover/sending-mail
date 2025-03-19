@@ -4,12 +4,12 @@ const nodemailer=require('nodemailer');
 const SendEmail=async (to,subject,message)=>{
     try{
         const transport=nodemailer.createTransport({
-            host:"smtp.gmail.com",
+            host:"example.gmail.com",//replace your host id
             port:587,
             secure:false,
             auth:{
-                user:"arunkumarkarna.2104@gmail.com",
-                pass:"gcbf onju lmmu rfio"
+                user:"your email address", // replace with your gmail
+                pass:"gmail password" //replace with your google email App password
             },
             tls:{
                 rejectUnauthorized:false
@@ -17,7 +17,7 @@ const SendEmail=async (to,subject,message)=>{
         });
         
         const mailOps={
-            from:"arunkumarkarna.2104@gmail.com",
+            from:"your email address", // replace with your email address
             to,
             subject,
             text:message
